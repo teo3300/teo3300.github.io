@@ -34,6 +34,7 @@ main h2{
 }
 p{
   font-family: 'Open Sans';
+  margin-bottom: 1em;
   font-size: 100%;
 }
 a{
