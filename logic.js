@@ -40,7 +40,7 @@ function formatContent() {
   text = document.getElementById("sheet").innerHTML;
   document.getElementById("sheet").innerHTML = "";
   var srt = 0;
-  text=text.split();
+  text=text.split("\n");
   while(!text[srt]) srt++;
   document.getElementById("page_title").innerHTML = createUrl(text[srt]);
   for(var i = srt+1; i < text.length; i++){
