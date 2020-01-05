@@ -44,19 +44,17 @@ function formatContent() {
   while(!text[srt]) srt++;
   document.getElementById("page_title").innerHTML = createUrl(text[srt]);
   for(var i = srt+1; i < text.length; i++){
-    if(text[i]){
-      if(text[i].includes("](")){
-        text[i] = createUrl(text[i]);
-      }
+    if(text[i].includes("](")){
+      text[i] = createUrl(text[i]);
+    }
     /*if(text[i].includes("**")){
       text[i] = toBold(text[i]);
     }*/
-      if(text[i].substr(0,3) == "## "){
-        text[i] = "<h2>" + text[i].substr(3) + "</h2>\n";
-      }else{
-        text[i] = "<p>" + text[i] + "</p>\n";
-      }
-      document.getElementById("sheet").innerHTML += text[i];
+    if(text[i].substr(0,3) == "## "){
+      text[i] = "<h2>" + text[i].substr(3) + "</h2>\n";
+    }else{
+      text[i] = "<p>" + text[i] + "</p>\n";
     }
+    document.getElementById("sheet").innerHTML += text[i];
   }
 }
