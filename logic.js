@@ -37,7 +37,7 @@ function createUrl(line) {
 }
 
 function formatContent() {
-  text = document.getElementById("sheet").innerHTML;
+  var text = document.getElementById("sheet").innerHTML;
   document.getElementById("sheet").innerHTML = "";
   var srt = 0;
   text=text.split("\n");
