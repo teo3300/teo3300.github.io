@@ -1,0 +1,20 @@
+@font-face{
+  font-family: Header;
+  src: url("dat/fonts/Lovelo-Black.ttf");
+}
+header{
+  background-color: #e6df97;
+}
+h1,h2{
+  font-family: Header;
+}
+h3,p{
+  font-family: 'Open Sans';
+}
+body{
+  background-color:#f7f5a2;
+  color: #3d2231;
+}
+a{
+  color: #3d2231;
+}

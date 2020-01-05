@@ -1,10 +1,6 @@
-@font-face{
-  font-family: Header;
-  src: url("dat/fonts/Lovelo-Black.ttf");
-}
 header{
+  text-align: center;
   padding: 4px;
-  background-color: #e6df97;
 }
 main{
   margin: 2em;
@@ -12,18 +8,15 @@ main{
   margin-bottom: 20%;
 }
 h1{
-  font-family: Header;
   margin: 0px;
   font-size: 300%;
 }
 h2{
-  font-family: Header;
   font-size: 200%;
   margin: 0.4em;
 }
 h3{
   margin-top: 0px;
-  font-family: 'Open Sans';
   font-weight: bold;
   font-size: 120%;
 }
@@ -33,35 +26,41 @@ main h2{
   margin-top: 2em;
 }
 p{
-  font-family: 'Open Sans';
-  margin-bottom: 1.6em;
   font-size: 100%;
 }
 a{
   text-decoration: none;
   font-weight: bold;
-  color: #3d2231;
 }
 body{
   margin: 0px;
   padding: 0px;
-  background-image: url("dat/shinobu_small.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: bottom right;
-  background-color: #f7f5a2;
-  color: #3d2231;
 }
-@media only screen and (min-width: 768px){
+.innerImg{
+  width: 100%;
+}
+@media only screen and (min-width: 640px){
   body{
     background-image: url("dat/shinobu.png");
     background-repeat: no-repeat;
+    background-size: 45%;
     background-attachment: fixed;
     background-position: bottom right;
   }
   main{
-    margin-right: 45%;
+    padding-right: 45%;
     margin-bottom: 10%;
+  }
+  .innerImg{
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 768px){
+  body{
+    background-size: 30%;
   }
 }
 footer{
