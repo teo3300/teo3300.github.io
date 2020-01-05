@@ -41,10 +41,10 @@ function formatContent() {
   document.getElementById("sheet").innerHTML = "";
   var srt = 0;
   text=text.split("\n");
-  while(!text[srt]) srt++;
+  while(!text[srt] && str<text.length) srt++;
   document.getElementById("page_title").innerHTML = createUrl(text[srt]);
   for(var i = srt+1; i < text.length; i++){
-    while(!text[i]) i++;
+    while(!text[i] && i<text.length) i++;
     if(text[i].includes("](")){
       text[i] = createUrl(text[i]);
     }
