@@ -37,8 +37,7 @@ function createUrl(line) {
 }
 
 function formatContent() {
-  var text = document.getElementById("sheet").innerHTML;
-  document.getElementById("sheet").innerHTML = "";
+  var text = document.getElementById("content").innerHTML;
   var srt = 0;
   text=text.split("\n");
   while(!text[srt]) srt++;
@@ -57,4 +56,5 @@ function formatContent() {
     }
     document.getElementById("sheet").innerHTML += text[i];
   }
+  document.getElementById("content").innerHTML = "";
 }
