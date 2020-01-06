@@ -86,3 +86,6 @@ footer a{
 .credits{
   text-decoration: underline;
 }
+.hidden{
+  display: none !important;
+}
