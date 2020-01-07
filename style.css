@@ -31,6 +31,7 @@ p{
 a{
   text-decoration: none;
   font-weight: bold;
+  outline: none;  /*Let's try this one*/
 }
 body{
   margin: 0px;
