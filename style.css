@@ -50,6 +50,9 @@ body{
   width: 100%;
   border-radius: 10px;
 }
+iframe{
+  border-radius: 10px;
+}
 @media only screen and (min-width: 640px){
   body{
     background-image: url("dat/shinobu.png");
