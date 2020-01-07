@@ -52,6 +52,8 @@ function formatContent() {
     }*/
     if(text[i].substr(0,3) == "## "){
       text[i] = "<h2>" + text[i].substr(3) + "</h2>\n";
+    }else if(text[i].substr(0,3) == " - "){
+      text[i] = "<li>" + text[i].substr(3) + "</li>\n";
     }else{
       text[i] = "<p>" + text[i] + "</p>\n";
     }

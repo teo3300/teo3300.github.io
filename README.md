@@ -6,5 +6,5 @@ Wow, a lot of commits!
   - theme css separated from the main style.css so esily edit themes
   - responsiveness (meh)
   - working fine on firefox, not so fine with chrome, need to test on opera/edge
-  - md-like text support links, titles, images
+  - md-like text support links, titles, images, lists
   - bold and italic not supported (probably bold will never be cause it's used for to highlight hypertext) still function will be very similar to the italic so easy to implement

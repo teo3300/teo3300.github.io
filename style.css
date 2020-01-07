@@ -25,8 +25,14 @@ main h2{
   margin-right: 0.8em;
   margin-top: 2em;
 }
-p{
+p, li{
   font-size: 100%;
+}
+li{
+  margin-left: 2em;
+  margin-top: 1.8em;
+  margin-bottom: 1.8em;
+  list-style-type:circle;
 }
 a{
   text-decoration: none;
