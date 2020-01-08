@@ -55,7 +55,6 @@ iframe{
 }
 @media only screen and (min-width: 640px){
   body{
-    background-image: url("dat/shinobu.png");
     background-repeat: no-repeat;
     background-size: 45%;
     background-attachment: fixed;
