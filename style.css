@@ -53,7 +53,7 @@ body{
 iframe{
   border-radius: 10px;
 }
-@media only screen and (min-device-pixel-ratio: 2) and (min-width: 640px){
+@media only screen and (max-device-pixel-ratio: 2) and (min-width: 640px){
   body{
     background-repeat: no-repeat;
     background-size: 45%;
