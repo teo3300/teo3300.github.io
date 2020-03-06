@@ -65,7 +65,8 @@ iframe{
     margin-bottom: 10%;
   }
   .innerImg{
-    width: 70%;
+    width: 60%;
+		margin-left: 15%;
   }
 }
 @media only screen and (max-resolution: 300dpi) and (min-width: 768px){
