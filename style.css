@@ -68,7 +68,7 @@ iframe{
     width: 70%;
   }
 }
-@media only screen and (min-width: 768px){
+@media only screen and (max-resolution: 300dpi) and (min-width: 768px){
   body{
     background-size: 30%;
   }
