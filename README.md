@@ -2,7 +2,7 @@
 
 Wow, a lot of commits!
 ## I'm finally fine with this version:
-  - content of <main> generated from an md-like text
+  - content generated from an md-like text
   - theme css separated from the main style.css so esily edit themes
   - responsiveness (meh)
   - working fine on firefox, not so fine with chrome, need to test on opera/edge
