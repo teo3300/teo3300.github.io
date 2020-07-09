@@ -22,6 +22,7 @@ li{
 
 iframe{
   width: 100%;            /* Adatta i video alla pagina */
+  border-radius: 14px;    /* Arrotonda */
   margin-top: 1em;        /* Non morire video */
   margin-bottom: 2.5em;   /* Separa i paragrafi */
 }
