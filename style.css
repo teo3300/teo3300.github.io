@@ -1,79 +1,91 @@
-header{
-  text-align: center;
-  padding: 4px;
+header, h1{
+  margin-top:  0px;      /* Rimuove il margine superiore dell titolo*/
 }
-main{
-  margin: 2em;
-  margin-top: 0px;
-  margin-bottom: 20%;
+
+h1, h2{
+  text-align: center;   /* Centra titoli e paragrafi */
 }
-h1{
-  margin: 0px;
-  font-size: 300%;
-}
-h2{
-  font-size: 200%;
-  margin: 0.4em;
-}
-h3{
-  margin-top: 0px;
-  font-weight: bold;
-  font-size: 120%;
-}
+
 main h2{
-  margin-left: 0.8em;
-  margin-right: 0.8em;
-  margin-top: 2em;
+  margin: 0.5em;        /* Rendi più distinguibili i paragrafi */
+  margin-top: 2em;      /* Rendi più distinguibili i paragrafi */
 }
-p, li{
-  font-size: 100%;
+
+p{
+  margin: 0.5em;        /* Distanzia i paragrafi dal bordo */
+  margin-left: 2%;      /* Distanzia i paragrafi dal bordo */
 }
+
 li{
-  margin-left: 2em;
-  margin-top: 0.8em;
-  margin-bottom: 0.8em;
-  list-style-type:circle;
+  margin-left: 4%;      /* Metti in risalto le liste */
 }
-a{
-  text-decoration: none;
-  font-weight: bold;
-  outline: none;  /*Let's try this one*/
-}
-body{
-  margin: 0px;
-  padding: 0px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: bottom right;
-}
-.innerImg{
-  width: 100%;
-  border-radius: 10px;
-}
+
 iframe{
-  border-radius: 10px;
+  width: 100%;          /* Adatta i video alla pagina */
 }
-@media only screen and (max-resolution: 300dpi) and (min-width: 640px){
+
+ /*****************************************************************************/
+.in-block {
+  text-align: center;     /* Centra i testi sotto le immagini*/
+  display: inline-block;  /* Affianca i blocchi */
+  width: 26%;             /* Massimo 5 blocchi per linea */
+  border: 1px solid;      /* Evidenzia i blocchi con un bordo */
+  border-radius: 10px;    /* Arrotonda i bordi */
+  padding: 8px;           /* Evita che le magini escano dai bordi*/
+  margin: 4px;            /* Distanzia i blocchi tra loro */
+}
+
+div img.innerImg{
+  border-radius: 8px;     /* Tondo è bello */
+  width: 100%;            /* butta le immagini in una dimensione accettabile */
+}
+/* Gestione blocchi */
+/******************************************************************************/
+
+main{
+  margin: 0px;            /* Sfoltisci sui bordi */
+  padding: 0px;           /* Sfoltisci sui bordi */
+}
+
+/******************************************************************************/
+@media only screen and (max-resolution: 300dpi) and (min-width: 761px){
   body{
-    background-repeat: no-repeat;
-    background-size: 45%;
-    background-attachment: fixed;
-    background-position: bottom right;
+    background-size: 25%;
+  }
+
+  iframe{
+    margin-left: 20%;     /* Se a schermo largo rimpicciolisci i video */
+    width: 60%;           /* Se a schermo largo rimpicciolisci i video */
+  }
+
+  .in-block{
+    width: 28%;           /* A schermo intero ci sta pure così */
   }
   main{
-    padding-right: 45%;
-    margin-bottom: 10%;
-  }
-  .innerImg{
-    width: 60%;
-		margin-left: 15%;
+    margin-right: 33%;    /* Dai spazio a shinobu */
   }
 }
-@media only screen and (max-resolution: 300dpi) and (min-width: 768px){
-  body{
-    background-size: 30%;
-  }
+
+/******************************************************************************/
+body{
+  background-repeat: no-repeat;       /**/
+  background-attachment: fixed;       /* Valido in ogni formato */
+  background-position: bottom right;  /**/
 }
+
+a{
+  text-decoration: none;              /* Voglio un testo pulito */
+  font-weight: bold;                  /* Usa il grassetto per i link*/
+  outline: none;                      /* Togli quelle orribili linee di quando passi il mouse */
+}
+
+li{
+  list-style-type: circle;            /* Formato standard per le liste: cerchio */
+}
+
+
+/******************************************************************************/
+/* Il footer mi piace così */
 footer{
   font-size: 0.8em;
 }
@@ -83,19 +95,21 @@ footer > p{
 footer a{
   font-weight: normal;
 }
+
 .static{
   text-align: center;
 }
 .contacts{
-  margin-left: 15px;
+  margin-left: 15px;              /* Altrimenti le icone rimangono attaccate */
   margin-right: 15px;
 }
 .contact_icon{
-  width: 30px;
+  width: 30px;                    /* Come dimensionne è buona */
 }
 .credits{
-  text-decoration: underline;
+  text-decoration: underline;     /* Invece qui lascia sottolineato così si capisce */
 }
+
 .hidden{
-  display: none !important;
+  display: none !important;       /* Assegna classe "hidden" per nasconder un oggetto */
 }

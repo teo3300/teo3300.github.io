@@ -2,7 +2,7 @@
   font-family: Header;
   src: url("dat/fonts/Lovelo-Black.ttf");
 }
-@media only screen and (min-width: 640px){
+@media only screen and (min-width: 761px){
   body{
     background-image: url("dat/shinobu.png");
   }
@@ -13,9 +13,9 @@ header{
 h1,h2{
   font-family: Header;
 }
-h3, p, li{
+h3, p, li, .in-block{
   font-family: 'Open Sans';
-} 
+}
 body{
   background-color:#f7f5a2;
   color: #3d2231;
