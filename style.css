@@ -39,12 +39,21 @@ div img.innerImg{
   border-radius: 8px;     /* Tondo è bello */
   width: 100%;            /* butta le immagini in una dimensione accettabile */
 }
+
 /* Gestione blocchi */
 /******************************************************************************/
 
 main{
   margin: 0px;            /* Sfoltisci sui bordi */
   padding: 0px;           /* Sfoltisci sui bordi */
+}
+
+.innerImg {
+  width: 60%;             /* Meh */
+  border-radius: 14px;    /* Arrotonda */
+  margin-left: 12%;       /* Non morire immagine */
+  margin-top: 1em;        /* Non morire immagine */
+  margin-bottom: 2.5em;   /* Separa i paragrafi */
 }
 
 /******************************************************************************/
@@ -61,6 +70,7 @@ main{
   .in-block{
     width: 28%;           /* A schermo intero ci sta pure così */
   }
+
   main{
     margin-right: 33%;    /* Dai spazio a shinobu */
   }
