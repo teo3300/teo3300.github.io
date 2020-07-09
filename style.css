@@ -1,27 +1,29 @@
 header, h1{
-  margin-top:  0px;      /* Rimuove il margine superiore dell titolo*/
+  margin-top:  0px;       /* Rimuove il margine superiore dell titolo*/
 }
 
 h1, h2{
-  text-align: center;   /* Centra titoli e paragrafi */
+  text-align: center;     /* Centra titoli e paragrafi */
 }
 
 main h2{
-  margin: 0.5em;        /* Rendi più distinguibili i paragrafi */
-  margin-top: 2em;      /* Rendi più distinguibili i paragrafi */
+  margin: 0.5em;          /* Rendi più distinguibili i paragrafi */
+  margin-top: 2em;        /* Rendi più distinguibili i paragrafi */
 }
 
 p{
-  margin: 0.5em;        /* Distanzia i paragrafi dal bordo */
-  margin-left: 2%;      /* Distanzia i paragrafi dal bordo */
+  margin: 0.5em;          /* Distanzia i paragrafi dal bordo */
+  margin-left: 2%;        /* Distanzia i paragrafi dal bordo */
 }
 
 li{
-  margin-left: 4%;      /* Metti in risalto le liste */
+  margin-left: 4%;        /* Metti in risalto le liste */
 }
 
 iframe{
-  width: 100%;          /* Adatta i video alla pagina */
+  width: 100%;            /* Adatta i video alla pagina */
+  margin-top: 1em;        /* Non morire video */
+  margin-bottom: 2.5em;   /* Separa i paragrafi */
 }
 
  /*****************************************************************************/
