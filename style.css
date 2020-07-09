@@ -38,11 +38,6 @@ iframe{
   margin: 4px;            /* Distanzia i blocchi tra loro */
 }
 
-div img.innerImg{
-  border-radius: 8px;     /* Tondo è bello */
-  width: 100%;            /* butta le immagini in una dimensione accettabile */
-}
-
 /* Gestione blocchi */
 /******************************************************************************/
 
@@ -98,6 +93,14 @@ li{
 
 
 /******************************************************************************/
+
+
+div img.innerImg{
+  margin: 0px;            /* Sennò si rompe tutto */
+  border-radius: 8px;     /* Tondo è bello */
+  width: 100%;            /* Butta le immagini in una dimensione accettabile */
+}
+
 /* Il footer mi piace così */
 footer{
   font-size: 0.8em;
