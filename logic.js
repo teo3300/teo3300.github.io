@@ -55,8 +55,8 @@ function formatContent() {
     }else if(text[i].substr(0,3) == " - "){
       text[i] = "<li>" + text[i].substr(3) + "</li>\n";
       /*************************************************/
-    }else if(text[i].substr(0,3) == "|__" && text[i].substr(text[i].length-3, 3) == "__|"){
-      text[i] = "<div class=\"in-block\">\n" + text[i].substr(3, text[i].length-6) + "</div>";
+    }else if(text[i].substr(0,3) == "|__"){
+      text[i] = "<div class=\"in-block\">\n" + text[i].substr(3) + "</div>";
     } /*************************************************/
     else if (text[i].substr(0,1) != "<"){
       text[i] = "<p>" + text[i] + "</p>\n";
