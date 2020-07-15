@@ -94,7 +94,7 @@ function formatContent() {
       var res = text[i].split(TAG_GALLERY_SEP)[0].substr(TAG_GALLERY.length);
       var legend = text[i].split(TAG_GALLERY_SEP)[1];
       if (legend == undefined) legend = "";
-      text[i] = block + "<a href=\""+res+"\"><img class=\"innerImg\" src=\""+res+"\" alt=\""+res+"\"> </a><br>"+ legend +"</div>";
+      text[i] = block + "<a href=\""+res+"\"><img class=\"innerImg\" src=\""+res+"\" alt=\""+res+"\"> </a><br><p>"+ legend +"</p></div>";
     } /*************************************************/
     else if (text[i].substr(0,1) != "<"){
       text[i] = "<p>" + text[i] + "</p>\n";

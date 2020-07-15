@@ -20,6 +20,10 @@ p{
   margin-left: 2%;        /* Distanzia i paragrafi dal bordo */
 }
 
+.in-block p{
+  margin-top: 0.2em;      /* Bordo più piccolo del normale */
+}
+
 li{
   margin-left: 4%;        /* Metti in risalto le liste */
 }
@@ -53,7 +57,7 @@ main{
 .innerImg {
   width: 60%;             /* Meh */
   border-radius: 14px;    /* Arrotonda */
-  margin-left: 12%;       /* Non morire immagine */
+  margin: auto;           /* Non morire immagine */
   margin-top: 1em;        /* Non morire immagine */
   margin-bottom: 2.5em;   /* Separa i paragrafi */
 }
