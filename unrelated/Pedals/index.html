@@ -1,0 +1,77 @@
+<head>
+  <meta charset="utf-8">
+  <!-- Specify charset -->
+  <title>Pedals</title>
+
+  <script type="text/javascript" src="../../logic.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../../style.css">
+  <link rel="stylesheet" type="text/css" href="../../face.css">
+</head>
+<body onload="formatContent()">
+  <header>
+    <h1><a href="https://teo3300.github.io">Matteo Rogora</a></h1>
+    <h2 id="page_title"></h2>
+  </header>
+  <div class="hidden" id="content">
+[Pedals](https://github.com/teo3300/Pedaliera)
+
+## Hey!
+Do you remember my [DDR-DancePad](../DDR-DancePad/index.html)?
+Well... This is almost the same thing (hopefully more useful)
+
+## What is this "thing"?
+So basically (I'm very smol ?[smol nezuko](https://i.pinimg.com/originals/1e/34/d1/1e34d1d72583909696bfc2668a488981.png)) this a keyboard for my PC but it's controlled using feet
+The objective was to browse music sheets hands-free (You know, I still need my hands to play guitar) so I transformed an Amazon packaging into a pair of electric switches and used an Arduino board to connect them to the computer
+
+## Prototype
+Yeah, there is a very poor cable management
+Thanks to the construction of the DDR-DancePad I learnt somethig about creating contacts using everything as rigid structure
+![Prototype](prototype_inside.jpg)
+
+## Final(?) version
+The prototype works fine (for being a heap of cardboards, aluminium foil, copper, hot glue and Geomag). Let's build a decent version!
+This new version is made out of wood hinged using tissue (I used velcro hooks) for the rigid parts and foam that act as a spring, the contacts will always be made using aluminium foil (reinforced with paper before gluing them to the wood)
+It also has 3 buttons instead of 2 (one of em can act as a modifier key, to have 2 set of 2 buttons instead of 3 different buttons)
+![Final](final.jpg)
+
+## The Programm.ino
+The thing I love about this project is it's software, it's a really small [program](https://github.com/teo3300/Pedaliera) but it allows me to manage all buttons separetly in a not-so-complex way (like it happens if simply using the "Keyboard" library, I lack fantasy, so I called it "Key")
+Every key can be set in  different ways:
+ - Simple read (only reads pin status, I used it to switch between the 2 pair of buttons)
+ - Combination of buttons (2-5)
+ - Toggle (pressing the button change its state)
+ - Hold (the button can be long pressed)
+ - Press (The button can't be long pressed)
+
+## In conclusion remember: Hot glue is hot
+
+//prototype.jpg * Cardboard prototype
+//prototype_inside.jpg * Prototype contacts
+//prototype_back.jpg * Arduino controller on the back
+//final.jpg * Final version with 3 buttons
+//final_inside.jpg * The final version is easy to open
+//prototype_and_final.jpg * Both the prototype and the final version
+
+  </div>
+  <main id="sheet">
+  </main>
+  <footer class="static">
+    <!--<a href="link to page">
+         <img class="contacts" alt="alt-text" src="image">
+    </a>-->
+    <a class="contacts" href="https://github.com/teo3300/">
+         <img class="contact_icon" alt="GitHub" src="../../dat/github_logo.png">
+    </a>
+    <a class="contacts" href="https://twitter.com/teo3300/">
+         <img class="contact_icon" alt="Twitter" src="../../dat/Twitter_logo.png">
+    </a>
+    <a class="contacts" href="https://t.me/teo3300">
+         <img class="contact_icon" alt="Telegram" src="../../dat/telegram_logo.png">
+    </a>
+    <p>Title font: <a class="credits" href="https://www.fontfabric.com/fonts/lovelo/">Lovelo</a></p>
+    <p>Background minimal art: <a class="credits" href="https://www.deviantart.com/dastrontm/">DastronTM</a></p>
+    <p>Original image: <a class="credits" href="https://twitter.com/yamasaning">やま参</a></p>
+    <p>teo3300 - 2020</p>
+  </footer>
+</body>

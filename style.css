@@ -58,6 +58,10 @@ main{
   margin-bottom: 2.5em;   /* Separa i paragrafi */
 }
 
+.inLineImg{
+  height: 1.3em;
+}
+
 /******************************************************************************/
 @media only screen and (max-resolution: 300dpi) and (min-width: 761px){
   body{

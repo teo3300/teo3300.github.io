@@ -23,3 +23,6 @@ body{
 a{
   color: #3d2231;
 }
+.hidden{
+  display: none !important;       /* Assegna classe "hidden" per nasconder un oggetto */
+}

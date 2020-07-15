@@ -8,4 +8,5 @@ Wow, a lot of commits!
   - working fine on firefox, not so fine with chrome, need to test on opera/edge
   - md-like text support links, titles, images, lists
   - bold and italic not supported (probably bold will never be cause it's used for to highlight hypertext) still function will be very similar to the italic so easy to implement
-  - changed project section uses blocks
+  - content blocks and gallery (thumbnails with automatic link to self and description)
+  - inline stickers
