@@ -37,6 +37,13 @@ function createUrl(line) {
 }
 
 function formatContent() {
+  /* List of tag strings */
+  var TAG_TITLE = "## ";
+  var TAG_LIST = " - ";
+  var TAG_BLOCK_START = "/*";
+  var TAG_BLOCK_END = "*/"
+
+
   var text = document.getElementById("content").innerHTML;
   var srt = 0;
   text=text.split("\n");
@@ -49,14 +56,31 @@ function formatContent() {
     }
     /*if(text[i].includes("**")){
       text[i] = toBold(text[i]);
-    }*/
-    if(text[i].substr(0,3) == "## "){
-      text[i] = "<h2>" + text[i].substr(3) + "</h2>\n";
-    }else if(text[i].substr(0,3) == " - "){
-      text[i] = "<li>" + text[i].substr(3) + "</li>\n";
+    }else */
+    if(text[i].substr(0,TAG_TITLE.length) == TAG_TITLE){
+      text[i] = "<h2>" + text[i].substr(TAG_TITLE.length) + "</h2>\n";
+
+    }else if(text[i].substr(0,TAG_LIST.length) == TAG_LIST){
+      text[i] = "<li>" + text[i].substr(TAG_LIST.length) + "</li>\n";
       /*************************************************/
-    }else if(text[i].substr(0,3) == "|__"){
-      text[i] = "<div class=\"in-block\">\n" + text[i].substr(3) + "</div>";
+    }else if(text[i].substr(0,TAG_BLOCK_START.length) == TAG_BLOCK_START){
+      if(text[i].substr(text[i].length-TAG_BLOCK_END.length,TAG_BLOCK_END.length) == TAG_BLOCK_END){
+        text[i]= "<div class=\"in-block\">\n" + text[i].substr(TAG_BLOCK_END.length, text[i].length-(TAG_BLOCK_START.length + TAG_BLOCK_END.length)) + "</div>";
+      }else{
+        text[i] = ""; // Boh, robe
+        var block = "<div class=\"in-block\">\n";
+        for (; i < text.length && text[i].substr(text[i].length-TAG_BLOCK_END.length, TAG_BLOCK_END.length) != TAG_BLOCK_END; ++i) {
+          if(text[i].includes("](")){
+            block += createUrl(text[i]);
+          }else{
+            block += (text[i] + "\n");
+          }
+        }
+        if(text[i].substr(text[i].length-TAG_BLOCK_END.length, TAG_BLOCK_END.length) == TAG_BLOCK_END){
+          block += "</div>"
+        }
+        text[i] = block;
+      }
     } /*************************************************/
     else if (text[i].substr(0,1) != "<"){
       text[i] = "<p>" + text[i] + "</p>\n";
