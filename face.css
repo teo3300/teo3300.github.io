@@ -7,7 +7,7 @@
     background-image: url("dat/shinobu.png");
   }
 }
-header{
+header, .in-block{
   background-color: #e6df97;
 }
 h1,h2{
