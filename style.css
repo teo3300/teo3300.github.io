@@ -57,7 +57,7 @@ main{
 .innerImg {
   width: 60%;             /* Meh */
   border-radius: 14px;    /* Arrotonda */
-  margin: auto;           /* Non morire immagine */
+  margin-left: 12%;       /* Non morire immagine */
   margin-top: 1em;        /* Non morire immagine */
   margin-bottom: 2.5em;   /* Separa i paragrafi */
 }
