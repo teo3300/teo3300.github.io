@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>help</title>
+    <script type="text/javascript" src="https://teo3300.github.io/logic.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://teo3300.github.io/style.css">
+    <link rel="stylesheet" type="text/css" href="https://teo3300.github.io/face.css">
+  </head>
+  <body onload="formatContent()">
+    <div style="color:Red;">
+      1) REMEMBER: add 'onload="formatContent()"' to your body(or following) element, otherwise the script won't process the text
+    </div>
+    <header>
+      <h1><a href="https://teo3300.github.io/">Manually add href for main title (back to main page)</a></h1>
+      <h2 id="page_title"></h2>
+    </header>
+    <div class="hidden" id="content">
+The first line of the "content" tag goes in to the Header (all link-related rules allowe)
+
+## Interpreter logic (stupidity)
+Every line with no other initial character set ("## ", "//", " - ") is interpreted as a paragraph, every empty line is omitted
+Every paragraph is separed from others by a blank space (margin)
+<div style="color:Red">2) WARNING: the interpreter ignore a line if it atarts with a "<" (only the first character is checked and this process is done per-line not allowing multiple-line embedded html elements) THIS COMMENT EXPLOIT THIS BUG :)</div>
+
+## Sub Titles: "## "
+Lines starting with "## " are interpreted as Sub titles
+<div style="color:Red">3) WARNING: No spaces allowed before the initial character set, ex: " ## " won't work, as the interpreter identify the string using the first characters only<br>(it's possible to add all link-related rules to these elements)</div>
+
+## Listing elements: " - "
+Lines starting with " - " are interpreted as an unordered list (&ltul&gt)
+Ex:
+ - Element 1
+ - Element 2 with [href](about:blank)
+ - Element 3 with Small image ?[Image not supported](https://i.redd.it/fn4g9kmybzn51.png)
+<div style="color:Red">4) WARNING: [3],<br>NOTE: empty element allowed, but many editors tend to remoe redundant blankspaces<br>(it's possible to add all link-related rules to these elements)</div>
+
+## Floating blocks: "/*" and "*/"
+All elements between this two characters are enclosed inside a block
+Ex:
+/* Single-element block */
+/*
+  ![AAAAA](https://giffiles.alphacoders.com/133/13331.gif)
+  Multi-element block (image)
+*/
+/*
+  Working [Links](https://cdn.staticneo.com/ca/zelda_four_swords_conceptart_oZdcR.jpg)
+  ?[Link](https://www.pngkit.com/png/full/320-3202580_edited-communication-icons-from-triforce-heroes-link-tri.png)
+*/
+<div style="color:Red">5) WARNING: [3] you can both use single-line or multi-line syntax (but not both at the same time)<br>NOTE: blocks are displayed 3 per-line (don't) overload 'em or your site will be ugly<br>(it's possible to add all link-related rules to these elements)</div>
+
+## Floating gallery blocks: "//" and " * "
+With this tag is possible to create gallery blocks: display small image with a reference to the image itself, and a legend:
+usage: "//&ltimage_URI&gt * &ltimage_legend&gt"
+//https://truth.bahamut.com.tw/s01/202009/28c97c6d3867c1372b1df6ea7af965a5.JPG * a!
+<div style="color:Red">6) WARNING: [3], this works on a single-line command<br>NOTE: [5]<br>(it's possible to add all link-related rules to these elements)</div>
+
+## Links: "[&lttext&gt] (&ltref&gt)"
+Create Hyperlink using MD rules: [Lol](https://www.youtube.com/watch?v=fC7oUOUEEi4)
+
+## Small inline-images: "?[&ltalt&gt] (&ltref&gt)"
+Incorpotate inline images [?[BUy this thing](https://ikea-family.ru/_nuxt/img/c68c152.png)](https://www.ikea.com/ie/en/p/blahaj-soft-toy-shark-30373588/)(please buy this thing, it's awesome)
+
+## Plain images: "![&ltalt&gt] (&ltref&gt)"
+Incorporates plain images
+![Best game](https://pbs.twimg.com/media/EVR0EARXQAAsLFt?format=png)
+<div style="color:Red">7) WARNING: these featuresares managed separately from all the others, and can be combined in any way, they only take one line each (from MD language)and<br>==THESE FEATURES ARE NESTABLE==<br>it's possible (and useful) to put links as alternative text, make href from images ec...</div>
+
+## Dependencies needed
+ - [logic.js](https://teo3300.github.io/logic.js): The interpreter itself
+ - [style.css](https://teo3300.github.io/style.css): Layout rules
+ - [face.css](https://teo3300.github.io/face.css): Coloring, font and Background image rules
+Keeping the two css apart allows to edit the facade without the risk to move elements, and allows to use different combinations of layout and colors
+<div style="color:Red">x+1) WARNING: All reference to the script are global, it's possible to use local path adding the files to your repo</div>
+
+    </div>
+    <main id="sheet">
+
+    </main>
+    <footer class="static">
+      <!--<a href="link to page">
+           <img class="contacts" alt="alt-text" src="image">
+      </a>-->
+      <a class="contacts" href="https://github.com/teo3300/">
+        <img class="contact_icon" alt="GitHub" src="https://image.flaticon.com/icons/png/512/37/37318.png">
+      </a>
+      <a class="contacts" href="https://twitter.com/teo3300/">
+        <img class="contact_icon" alt="Twitter" src="https://upload.wikimedia.org/wikipedia/it/archive/0/09/20160903181541%21Twitter_bird_logo.png">
+      </a>
+      <a class="contacts" href="https://t.me/teo3300">
+        <img class="contact_icon" alt="Telegram" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/768px-Telegram_logo.svg.png">
+      </a>
+      <p style="color:Red;">x+2) WARNING: use custom image for logo (like in other pages): original images are waaaaay too large</p>
+      <p style="color:Red;">x+3) WARNING: footer is not editable using interpreter (just add the same rules of the script to a new id and add it to the footer if you want it)</p>
+      <p>Title font: <a class="credits" href="https://www.fontfabric.com/fonts/lovelo/">Lovelo</a></p>
+      <p>Background minimal art: <a class="credits" href="https://www.deviantart.com/dastrontm/">DastronTM</a></p>
+      <p>Original image: <a class="credits" href="https://twitter.com/yamasaning">やま参</a></p>
+      <p>teo3300 - 2020</p>
+    </footer>
+  </body>
+</html>
