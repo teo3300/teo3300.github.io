@@ -115,6 +115,7 @@ div img.innerImg{
 
 /* Il footer mi piace così */
 footer{
+  margin-top:10%;
   font-size: 0.8em;
 }
 footer > p{
