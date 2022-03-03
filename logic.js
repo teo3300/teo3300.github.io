@@ -68,7 +68,8 @@ function formatContent() {
       text[i] = toBold(text[i]);
     }else */
     if(text[i].substr(0,TAG_TITLE.length) == TAG_TITLE){
-      text[i] = "<h2>" + text[i].substr(TAG_TITLE.length) + "</h2>\n";
+      var sub_title = text[i].substr(TAG_TITLE.length);
+      text[i] = "<h2 id=\"" + sub_title.replace(" ","-") + "\">" + sub_title + "</h2>\n";
 
     }else if(text[i].substr(0,TAG_LIST.length) == TAG_LIST){
       text[i] = "<li>" + text[i].substr(TAG_LIST.length) + "</li>\n";
