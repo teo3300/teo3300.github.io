@@ -39,11 +39,11 @@ iframe{
 .in-block {
   text-align: center;     /* Centra i testi sotto le immagini*/
   display: inline-block;  /* Affianca i blocchi */
-  width: 26%;             /* Massimo 5 blocchi per linea */
+  width: 20%;             /* Massimo 5 blocchi per linea */
   border: 1px solid;      /* Evidenzia i blocchi con un bordo */
   border-radius: 10px;    /* Arrotonda i bordi */
-  padding: 8px;           /* Evita che le magini escano dai bordi*/
-  margin: 4px;            /* Distanzia i blocchi tra loro */
+  padding: 8px;           /* Evita che le immagini escano dai bordi*/
+  margin: 0.3%;           /* Distanzia i blocchi tra loro */
 }
 
 /* Gestione blocchi */
@@ -67,9 +67,9 @@ main{
 }
 
 /******************************************************************************/
-@media only screen and (max-resolution: 300dpi) and (min-width: 761px){
+@media only screen and (max-resolution: 100dpi) and (min-width: 761px){
   body{
-    background-size: 25%;
+    background-size: 20%;
   }
 
   iframe{
@@ -78,11 +78,11 @@ main{
   }
 
   .in-block{
-    width: 28%;           /* A schermo intero ci sta pure così */
+    width: 16%;           /* A schermo intero ci sta pure così */
   }
 
   main{
-    margin-right: 33%;    /* Dai spazio a shinobu */
+    margin-right: 20%;    /* Dai spazio a shinobu */
   }
 }
 

@@ -26,3 +26,23 @@ a{
 .hidden{
   display: none !important;       /* Assegna classe "hidden" per nasconder un oggetto */
 }
+
+
+
+/******************************************************************************/
+body{
+  background-repeat: no-repeat;       /**/
+  background-attachment: fixed;       /* Valido in ogni formato */
+  background-position: bottom right;  /**/
+}
+
+a{
+  text-decoration: none;              /* Voglio un testo pulito */
+  font-weight: bold;                  /* Usa il grassetto per i link*/
+  outline: none;                      /* Togli quelle orribili linee di quando passi il mouse */
+}
+
+li{
+  list-style-type: circle;            /* Formato standard per le liste: cerchio */
+}
+
