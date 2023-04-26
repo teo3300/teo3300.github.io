@@ -39,7 +39,7 @@ iframe{
 .in-block {
   text-align: center;     /* Centra i testi sotto le immagini*/
   display: inline-block;  /* Affianca i blocchi */
-  width: 20%;             /* Massimo 5 blocchi per linea */
+  width: 30%;             /* Massimo 5 blocchi per linea */
   border: 1px solid;      /* Evidenzia i blocchi con un bordo */
   border-radius: 10px;    /* Arrotonda i bordi */
   padding: 8px;           /* Evita che le immagini escano dai bordi*/
